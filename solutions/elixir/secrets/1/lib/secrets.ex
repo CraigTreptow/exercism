@@ -1,6 +1,4 @@
 defmodule Secrets do
-  require Bitwise
-
   def secret_add(secret) do
     fn param ->
       param + secret
@@ -21,7 +19,7 @@ defmodule Secrets do
 
   def secret_divide(secret) do
     fn param ->
-      trunc(param / secret)
+      div(param, secret)
     end
   end
 
