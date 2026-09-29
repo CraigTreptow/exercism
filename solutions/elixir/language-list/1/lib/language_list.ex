@@ -8,11 +8,11 @@ defmodule LanguageList do
   end
 
   def remove(list) do
-    List.delete_at(list, 0)
+    tl(list)
   end
 
   def first(list) do
-    List.first(list)
+    hd(list)
   end
 
   def count(list) do
